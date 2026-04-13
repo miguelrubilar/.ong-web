@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>.ong-web</title>
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<h1>Organización sin fines de lucro</h1>
+
+<!-- SECCIÓN INFO -->
+<section>
+<h2>Sobre Nosotros</h2>
+<p>Misión: Apoyar proyectos sociales</p>
+<p>Visión: Ser líderes en ayuda comunitaria</p>
+</section>
+
+<!-- SECCIÓN PROYECTOS -->
+<section>
+<h2>Proyectos</h2>
+<a href="ver_proyectos.php">Ver proyectos</a>
+
+<form action="insertar_proyecto.php" method="POST">
+<input type="text" name="nombre" placeholder="Nombre">
+<input type="number" name="presupuesto" placeholder="Presupuesto">
+<button>Guardar</button>
+</form>
+</section>
+
+<!-- SECCIÓN DONANTE -->
+<section>
+<h2>Registrar Donante</h2>
+
+<form action="insertar_donante.php" method="POST">
+<input type="text" name="nombre" placeholder="Nombre"><br>
+<input type="email" name="email" placeholder="Email"><br>
+<input type="text" name="direccion" placeholder="Dirección"><br>
+<input type="text" name="telefono" placeholder="Teléfono"><br>
+<button>Guardar</button>
+</form>
+</section> 
+
+<!-- SECCIÓN REGISTRAR DONACION -->
+<section>
+<h2>Registrar Donación</h2>
+
+<form action="insertar_donacion.php" method="POST">
+<input type="number" name="monto" placeholder="Monto"><br>
+<input type="number" name="id_proyecto" placeholder="ID Proyecto"><br>
+<input type="number" name="id_donante" placeholder="ID Donante"><br>
+<button>Donar</button>
+</form>
+</section>
+  
+<!-- SECCIÓN DONACIONES -->
+<section>
+<h2>Donaciones</h2>
+<form action="donacion.php" method="POST">
+<input type="text" name="nombre" placeholder="Nombre">
+<input type="number" name="monto" placeholder="Monto">
+<button>Donar</button>
+</form>
+  
+<a href="consulta.php">Ver estadísticas</a>
+</section>
+
+</body>
+</html>
